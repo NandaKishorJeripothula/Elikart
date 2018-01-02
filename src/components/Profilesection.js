@@ -28,7 +28,7 @@ const Profilesection = () => (
     <Paper style={style} zDepth={1} >
 
         <div className="UpperSection " width="50%">
-         dsgdgdg
+         
          </div>
       <div className="" width="50%">
       <List>
