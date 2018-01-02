@@ -25,11 +25,17 @@ import '../App.css';
       color: 'blue'
     }
     var buttonStyle2 = {
-       backgroundColor: 'indigo900',
+       backgroundColor: '#29B6F6',
      borderRadius:50
+      }
+      var LabelTextTweet={
+        textTransform: 'capitalize',
+        color:'#FFFFFF',
       }
       var LabelText={
         textTransform: 'capitalize',
+        color:'#616161',
+        fontWeight:'bold',
       }
       var SearchStyle = {
          backgroundColor: 'indigo900',
@@ -50,7 +56,7 @@ import '../App.css';
                 // use An IconButton to generate a button element around an icon
                </IconButton>
 
-            <FlatButton label="Tweet"  style={buttonStyle2}   labelStyle={LabelText}              />
+            <FlatButton label="Tweet"  style={buttonStyle2}   labelStyle={ LabelTextTweet}  />
 
       </div>
     );
@@ -67,7 +73,7 @@ import '../App.css';
                <FlatButton label="Messages"  hoverColor={blue500} style={buttonStyle} labelStyle={LabelText}
                                             icon= {<i class="fa fa-envelope-o" aria-hidden="true"></i>}
                 />
-               <i class="fa fa-twitter fa-2x"></i>
+               <i class="fa fa-twitter fa-2x" style={{fontSize:'25px' ,color:'#29B6F6',marginTop:'3px' }}></i>
             <Searchbar/>
          </div>
       );

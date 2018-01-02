@@ -17,18 +17,19 @@ import Paper from 'material-ui/Paper';
 
 
    var TextStyle={
-    marginLeft:'-40%',
+    marginLeft:'-50%',
     backgroundColor: 'cyan500',
     float:'left',
     height:'30px',
-
+    width:'22em',
     borderRadius:'30px',
 
   }
   var HintStyle={
-    marginLeft:'-40%',
+    marginLeft:'-48%',
     marginTop:'0px',
     float:'left',
+
   }
 const StylePaper = {
   height: 50,
@@ -47,14 +48,14 @@ var FontStyle={
 float:'left',
 
 }
-
+var InputText={marginLeft:"5px",}
 const Postbar1 = () => (
 <span className="Postbar">
   <Paper  style={StylePaper}  zDepth={1} >
     <FontIcon style={FontStyle}   className="fa fa-user-circle-o fa-2x" aria-hidden="true"  />
   <div id="PostText">
-    <TextField textareaStyle={TextStyle} hintStyle={HintStyle} underlineStyle={HintStyle} underlineShow='false'
-    hintText="Whats Happing?"
+    <TextField textareaStyle={TextStyle} hintStyle={HintStyle} underlineStyle={HintStyle} underlineStyle={{display: 'none'}}
+      inputStyle={InputText}           hintText="Whats Happing?"
     // floatingLabelText="MultiLine and FloatingLabel"
       multiLine={true}
   />
