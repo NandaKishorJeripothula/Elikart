@@ -1,0 +1,220 @@
+
+.home{
+font-weight: bold;
+}
+.profileButton{
+hoverColor:blue;
+
+}
+.ProfileSection{
+
+    overflow: hidden;
+    position: relative;
+    max-height: 240px;
+    max-width: 270px;
+  /*  background-color: yellow; */
+}
+
+
+.UpperSection{
+  position:relative;
+  padding-bottom: 33.3333%;
+  background-color: #00BCD4;
+}
+.LowerSection{
+font-size: 12px;
+
+float:right;
+margin-left: 40px;
+margin-right: -10px;
+margin-top: -25px;
+}
+.LowerSectionText2{
+  margin-left: 30px;
+  margin-bottom:-3em;
+  margin-right: -10px;
+  font-size: 12px;
+}
+.ProfileSectionAvatar{
+  position: realative;
+  z-index: 10;
+  overflow: hidden;
+  margin-top: -3em;
+}
+.Text{
+  line-height: 0%;
+}
+.ProfileImage{
+   z-index: 10;
+
+}
+.card1{
+   padding-left:  80;
+  align-items: center;
+
+}
+#cards{
+  position: absolute;
+   width: 330px;
+   height: 200px;
+   top: 52%;
+   left: 40%;
+   margin: -100px 0 0 -150px;
+  /* background: red; */
+
+}
+.WhoToFollow{
+  display: inline-block;
+  padding-bottom:0px;
+}
+.FollowButton{
+  margin-left: 10px;
+  vertical-align: bottom;
+  line-height: 0px;
+  margin-top:0px;
+
+}
+.FollowPeople{
+height:70px;
+
+}
+.AvatarButton{
+line-height:0%;
+margin-left:0px;
+}
+.PeopleImage{
+  float:left;
+  margin-left: 15px;
+}
+.button {
+    background-color:white;
+    border: 1px solid #00BCD4;
+    color: #00BCD4;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px  ;
+}
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.button:active {
+  background-color: #3e8e41;
+  outline:none;
+  transform: translateY(4px);
+}
+.Trends{
+float:left;
+display: inline-block;
+padding-top: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px
+}
+
+.TrendsNo{
+   display: inline-block;
+   margin: 0; /* top right bottom left */
+    padding: 0;
+    clear:both;
+  margin-right: 0.3571rem;
+  line-height:0px;
+  font-size: 10px;
+  float:left;
+}
+.TrendsIn{
+  font-size: 15px;
+   line-height:0%;
+  color:#039BE5;
+  float:left;
+  margin-left:10px;
+}
+.Postbar{
+  height: 70px;
+  width: 30.7em;
+  position: relative;;
+/*  background-color: red; */
+ overflow: hidden;
+ display: inline-block;
+ margin-top: -13.5em;
+ margin-left: -0.5em;
+ float:left;
+}
+.fa-2x {
+  font-size: 2em !important;}
+#PostText{
+  float:right;
+}
+.ProfileDashboard{
+  position: relative;
+ width:20%;
+ height:20%;
+ /* background-color: green; */
+
+}
+.FirstPaper{
+  position: relative;
+    background-color: cyan500;
+   width:300px;
+
+}
+.SecondPaper{
+  position: relative;
+ top:-10px;
+ padding-top: 0px;
+/*  background-color: blue; */
+ width:300px;
+
+ margin-top: -2.5em;
+
+
+
+
+}
+.ProfileAvatar{
+
+background-color: red;
+margin-left: 40px;
+margin-top:"50%";
+position: relative;
+
+
+
+}
+
+.ChipPara{
+  word-spacing: 10px;
+  line-height: 0px;
+}
+.chip{
+  font-size: 12px;
+   }
+  .PageChipOuterDiv{
+    position: relative;
+  /*   background-color:blue; */
+    height: 170px;
+    width: 300px;
+    top:20px;
+    margin-top:180px;
+    float:right;
+  }
+  .PsButton{
+    float:right;
+  }
+
+
+/* page 2  stylesheets  begins here */
+.Aadhar{
+  background-color: #039BE5;
+  height:70px;
+}
+.TextAadhar{
+position:relative;
+  color: white;
+margin-top: 0em;
+padding-top: 0.5em;
+  margin-left:8em;
+}
