@@ -1,31 +1,37 @@
 import React, { Component } from 'react';
-import ReactDom from 'react-dom';
 import cyan500 from 'material-ui/styles/colors';
 
-import SearchBar from 'material-ui-search-bar'
+import SearchBar from 'material-ui-search-bar';
+import AutoComplete from 'material-ui/AutoComplete';
 
 // ...
+
 class Searchbar extends Component {
 render() {
   return(
     <SearchBar
       onChange={() => console.log('onChange')}
       onRequestSearch={() => console.log('onRequestSearch')}
+        hintText={"Search for Products Brand and more" }
       style={{
         position:'relative',
         float:'right',
         dispaly:'inline-block',
-        marginLeft:'15em',
-        marginTop:'8px',
-        maxWidth: 280,
+        marginLeft:'1em',
+        
+        maxWidth: '500px',
         maxHeight:35,
-        backgroundColor:cyan500,
-        borderRadius:10,
+        width:'450px',
+        backgroundColor:'white',
           border: '1px solid #00BCD4',
-          marginBottom:'0px',
+          
 
       }}
+     
     />
+     
+
+
   )
 }
 }
