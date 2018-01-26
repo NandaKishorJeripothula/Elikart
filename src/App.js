@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route,Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Link,Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -10,14 +10,18 @@ class App extends Component {
          <Router>
          <div>
            <ul>
-             <li><Link to="/">Home</Link></li>
+             <li><Link to="/"
+                       is>Home</Link></li>
              <li><Link to="/about">About</Link></li>
+             <li><Link to ="/auth">Login/SingUp</Link></li>
            </ul>
      
            <hr/>
      
            <Route exact path="/" component={Home}/>
            <Route path="/about" component={About}/>
+           <Route path="/auth" component={Auth}/>
+            <Route path="*"component={NoLink}></Route>
          </div>
        </Router>
       </div>        
@@ -27,6 +31,17 @@ class App extends Component {
 const Home = () => (
   <div>
     <h2>Home</h2>
+  </div>
+)
+
+const NoLink = () => (
+  <div>
+    <h2>404 Error</h2>
+  </div>
+)
+const Auth = () => (
+  <div>
+    <h2>Auth</h2>
   </div>
 )
 
