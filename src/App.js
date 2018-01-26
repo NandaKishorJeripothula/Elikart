@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route,Link,Switch } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -21,7 +20,7 @@ class App extends Component {
            <Route exact path="/" component={Home}/>
            <Route path="/about" component={About}/>
            <Route path="/auth" component={Auth}/>
-            <Route path="*"component={NoLink}></Route>
+          <Route component={NoLink}></Route>
          </div>
        </Router>
       </div>        
