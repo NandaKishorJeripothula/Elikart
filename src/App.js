@@ -1,35 +1,21 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Toolbar2 from './components/Toolbar2' ;
-import AutoCom from './components/Autocom' ;
-import CategoryBar from './components/CategoryBar' ;
-import Slider from './components/Slider' ;
-//import MyLog from './components/MyLog' ;
-import LogIn from './components/LogIn' ;
-//import Carousel  from './components/Carousel' ;
-//import Paper1 from './components/Paper1' ;
+import logo from './logo.svg';
+import './App.css';
 
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
+  }
+}
 
-
-     class App extends Component {
-      render() {
-      return (
-        <MuiThemeProvider>
-       <div className="App">
-          <Toolbar2/>
-          <CategoryBar/>
-          
-        
-        
-        <Slider/> 
-     
-
-        </div>
-        </MuiThemeProvider>
-               );
-          }
-         }
-                         /*const app=document.getElementById('root')
-                               ReactDom.render(<Layout/>,app);
-                          */
 export default App;
