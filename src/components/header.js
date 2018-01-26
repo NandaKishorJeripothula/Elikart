@@ -20,7 +20,7 @@ export default class Header extends Component{
     <div>
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">EliKart<Link to="/"></Link></a>
+        <a href="#!" class="brand-logo"><Link to="/">EliKart</Link></a>
         <ul class="right hide-on-med-and-down">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/user">User</Link></li>
