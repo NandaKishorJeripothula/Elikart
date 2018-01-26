@@ -20,7 +20,6 @@ class App extends Component {
            <Route exact path="/" component={Home}/>
            <Route path="/about" component={About}/>
            <Route path="/auth" component={Auth}/>
-          <Route component={NoLink}></Route>
          </div>
        </Router>
       </div>        
