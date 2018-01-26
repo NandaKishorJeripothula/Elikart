@@ -32,7 +32,7 @@ export default class Header extends Component{
       <Hidden mdUp className='footer'>  
         <BottomNavigation value = {this.state.value} onChange={this.handleChange}>
           <Link to="/"><BottomNavigationAction label="home" value="home" icon={<Home />}/></Link>
-          <Link to="/user"><BottomNavigationAction label="User" value="user" icon={<VerifiedUser />} /></Link>
+          <Link to="/user"><BottomNavigationAction label="User" value="user" icon={<VerifiedUser />}/></Link>
           <Link to ="/auth"><BottomNavigationAction label="Cart" value="cart" icon={<Check />} /></Link>
           <Link to ="/logoutRedirec"><BottomNavigationAction label="Logout" value="logout" icon={<Clear />} /></Link>
         </BottomNavigation>       
