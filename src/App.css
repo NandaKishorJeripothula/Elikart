@@ -1,8 +1,15 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}.App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
