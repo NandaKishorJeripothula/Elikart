@@ -5,7 +5,7 @@
 #Willson Backups
 /BackupData
 # dependencies
-node_modulesG
+node_modules
 # testing
 /coverage
 
