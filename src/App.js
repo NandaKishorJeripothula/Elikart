@@ -8,6 +8,7 @@ import Header from './components/header';
 import Home from './components/home';
 import User from './components/user';
 import Auth from './components/auth';
+import Login_Signup from './components/Login_Signup'
 import LogoutRedirec from './components/logoutRedirec';
 
 class App extends Component {

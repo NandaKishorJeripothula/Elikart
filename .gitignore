@@ -2,7 +2,8 @@
 
 #ide
 /.vscode
-
+#Willson Backups
+/BackupData
 # dependencies
 /node_modules
 
