@@ -4,12 +4,18 @@
 	padding: 0;
 	
 }
-.logo{
+#logo{
 	margin: 0;
 	padding: 0;
-	height : 50%;
+	height : 40%;
 	width: 100%;
 }
-.text{
+#Username{
 	color: white;
+}	
+#Password{
+	color:white;
+}
+#righttext,#Firstname,#Lastname,#email,#Uname,#Pword{
+	color:white;
 }

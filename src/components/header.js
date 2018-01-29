@@ -24,7 +24,7 @@ export default class Header extends Component{
         <ul class="right hide-on-med-and-down">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/user">User</Link></li>
-                <li><Link to ="/auth">Login/SingUp</Link></li>
+                <li><Link to ="/auth">Login/SignUp</Link></li>
                 <li><Link to ="/logoutRedirec">LogOut</Link></li>
         </ul>
       </div>

@@ -8,7 +8,7 @@ import Header from './components/header';
 import Home from './components/home';
 import User from './components/user';
 import Auth from './components/auth';
-import Login_Signup from './components/Login_Signup'
+import Login_Signup from './components/Login_Signup.js';
 import LogoutRedirec from './components/logoutRedirec';
 
 class App extends Component {
@@ -21,7 +21,7 @@ class App extends Component {
                  <Switch>
                       <Route exact path="/" component={Home}/>
                       <Route path="/user" component={User}/>
-                      <Route path="/auth" component={Auth}/>
+                      <Route path="/auth" component={Login_Signup}/>
                       <Route path="/logoutRedirec" component={LogoutRedirec}/>
                 </Switch>
             </MuiThemeProvider>
