@@ -21,7 +21,7 @@ export default class Login_Signup extends React.Component{
 									<TextField id="Username"
 										required
 										className="textField"
-										placeholder="Username"
+										placeholder="Username / Email"
 									/>
 									<TextField id="Password"
 										placeholder="password"
@@ -92,7 +92,7 @@ export default class Login_Signup extends React.Component{
 						<TextField id="Username"
 							required
 							className="textField"
-							placeholder="Username"
+							placeholder="Username / Email"
 						/>
 						<TextField id="Password"
 							placeholder="password"
