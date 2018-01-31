@@ -104,7 +104,8 @@ export default class Login_Signup extends React.Component{
           type="password"
           autoComplete="current-password"
         	required
-        	/><br/>
+        	/>
+
 			</GridListTile>
 			<GridListTile cols={1}>
 			 <Button 
@@ -149,7 +150,13 @@ export default class Login_Signup extends React.Component{
 			onChange={this.handlePasswordChange}
          		placeholder="password"
          	 type="password"
-          	autoComplete="current-password"
+          	
+        	required
+        	/><br/>
+        	<TextField id="CPword"
+         		placeholder=" confirm password"
+         	 type="password"
+          
         	required
         	/><br/><br/>
 			 <Button 
@@ -158,9 +165,9 @@ export default class Login_Signup extends React.Component{
               }} raised color="secondary" >
         	SignUp
       		</Button>
+
 			</GridListTile>
 			</GridList>
-			
 			
 			</MuiThemeProvider>
 			<Dialog
