@@ -14,7 +14,12 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
+.carousol{
+  height: auto;
+  width: 300px;
+  margin: 0;
+  vertical-align: -webkit-baseline-middle;
+}
 .App-header {
   background-color: #222;
   height: 150px;
