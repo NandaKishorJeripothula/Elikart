@@ -16,6 +16,7 @@
   border-radius: 0;
   outline: none;
   height: 3rem;
+  padding-left: 10px;
   width: 100%;
   font-size: 1rem;
   margin: 0 0 20px 0;
@@ -26,4 +27,9 @@
   box-sizing: content-box;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+.loginGrid{
+  margin: 60px;
+  width:300px;
+  max-width: 500px;
 }

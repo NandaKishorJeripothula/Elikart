@@ -1,10 +1,22 @@
 import React,{Component} from 'react';
-import { green} from 'material-ui/colors/green'
-import { blue } from 'material-ui/colors/blue'
-import { red } from 'material-ui/colors/red' 
 import TitlebarGridList from './productGrid'
 import ImageSlider from './imageSlider';
 export default class Home extends Component{
+    constructor(){
+        super();
+        this.state={
+            products:[],
+        }
+    }
+    componentDidMount(){
+        fetch('https://app.banner20.hasura-app.io/getproducts')
+        .then((data) => {
+          return data.json()
+        })
+        .then((json) => {
+          this.setState({ products: json.data })
+        })
+    }
     render(){
         return (
             <div>
@@ -14,6 +26,7 @@ export default class Home extends Component{
               </div>
               <br/>
               <TitlebarGridList/>
+              {this.state.products}
             </div>         
  
         )

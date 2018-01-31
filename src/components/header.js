@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import Hidden from 'material-ui/Hidden';
 import BottomNavigation, { BottomNavigationAction } from 'material-ui/BottomNavigation';
 import {Home, VerifiedUser, Check,Clear } from 'material-ui-icons';
+import BrandLogoElikart from './brandLogoElikart.png';
 
 export default class Header extends Component{
   
@@ -20,8 +21,8 @@ export default class Header extends Component{
   return(
     <div>
     <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo"><Link to="/">EliKart</Link></a>
+      <div class="nav-wrapper deep-purple accent-2">
+        <Link to="/"><img src={BrandLogoElikart} alt="Brand Logo ELikart" className="left responsive-img brand-logo"/></Link>
         <ul class="right hide-on-med-and-down">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/user">User</Link></li>
