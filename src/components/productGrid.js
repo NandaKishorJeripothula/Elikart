@@ -45,7 +45,7 @@ const styles = theme => ({
   },
   gridList: {
     width: 900,
-    height: 300,
+    height: 200,
   },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',

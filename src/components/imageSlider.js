@@ -1,6 +1,11 @@
 import React,{Component} from 'react';
+import GridList, { GridListTile } from 'material-ui/GridList';
 import Slider from 'react-slick';
+import {Link} from 'react-router-dom';
 export default class ImageSlider extends Component{
+    constructor(props){
+      super(props);
+    }
     render() {
         var settings = {
           dots: true,
@@ -14,14 +19,25 @@ export default class ImageSlider extends Component{
           slidesToScroll: 1,
           centerMode: true,
         };
+       
         return (
           <Slider {...settings}>
-            <div><h3>1</h3></div>
-            <div><h3>2</h3></div>
-            <div><h3>3</h3></div>
-            <div><h3>4</h3></div>
-            <div><h3>5</h3></div>
-            <div><h3>6</h3></div>
+              {
+              this.props.products.map((product,i)=>
+                <div>
+                  <Link to={'/product'+product.id}>
+                    <GridList cols={2} >
+                      <GridListTile cols={1} >
+                          <img src={product.first_image_url} alt={product.name}/>
+                      </GridListTile>
+                      <GridListTile cols={1}>
+                          <h6>{product.name}</h6><h6>{product.price}</h6>
+                      </GridListTile>
+                    </GridList>
+                  </Link>
+                </div>
+                )
+                }
           </Slider>
         );
       }
