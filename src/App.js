@@ -4,6 +4,7 @@ import Reboot from 'material-ui/Reboot';
 import 'typeface-roboto';
 import { MuiThemeProvider } from 'material-ui/styles';
 import './App.css';
+import Product from './components/product';
 import Header from './components/header';
 import Footer from './components/footer';
 
@@ -24,6 +25,7 @@ class App extends Component {
                       <Route exact path="/" component={Home}/>
                       <Route path="/user" component={User}/>
                       <Route path="/auth" component={Login_Signup}/>
+                      <Route path="/product" component={Product}/>
                       <Route path="/logoutRedirec" component={LogoutRedirec}/>
                 </Switch>
                 <Footer/>
