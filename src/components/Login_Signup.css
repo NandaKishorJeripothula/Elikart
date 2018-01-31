@@ -1,6 +1,5 @@
 .Login_Signup_body{
 	margin :0;
-	background-color: #2a3990;
 	padding: 0;
 	
 }
@@ -10,12 +9,21 @@
 	height : 40%;
 	width: 100%;
 }
-#Username{
-	color: white;
-}	
-#Password{
-	color:white;
-}
-#righttext,#Firstname,#Lastname,#email,#Uname,#Pword,#CPword,#mobile_no{
-	color:white;
+  .textField{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 20px 0;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }

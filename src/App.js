@@ -5,6 +5,8 @@ import 'typeface-roboto';
 import { MuiThemeProvider } from 'material-ui/styles';
 import './App.css';
 import Header from './components/header';
+import Footer from './components/footer';
+
 import Home from './components/home';
 import User from './components/user';
 import Auth from './components/auth';
@@ -24,6 +26,7 @@ class App extends Component {
                       <Route path="/auth" component={Login_Signup}/>
                       <Route path="/logoutRedirec" component={LogoutRedirec}/>
                 </Switch>
+                <Footer/>
             </MuiThemeProvider>
       </div>        
     );

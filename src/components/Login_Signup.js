@@ -3,83 +3,13 @@ import ReactDOM from 'react-dom';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
-import Dialog from 'material-ui/Dialog';
-
 import Button from 'material-ui/Button';
 import Divider from 'material-ui/Divider';
-import FinalLogo2 from './FinalLogo2.png';
 import './Login_Signup.css';
 import {saveOffline } from './config';
 import {authenticateUser} from './api';
 
 export default class Login_Signup extends React.Component{
-	constructor() {
-		super()
-		this.state = {
-		  username: '',
-		  password: '',
-		  email:'',
-		  firstname:'',
-			lastname:'',
-		};
-		}
-	  handleUsernameChange = (e) => {
-		this.setState({
-		  ...this.state,
-		  username: e.target.value
-		});
-	  }
-	  handlePasswordChange = (e) => {
-		this.setState({
-		  ...this.state,
-		  password: e.target.value
-		});
-	  }
-	  handleEmailChange = (e) => {
-		this.setState({
-		  ...this.state,
-		  email: e.target.value
-		});
-	  }
-	  handleFirstnameChange = (e) => {
-		this.setState({
-		  ...this.state,
-		  firstname: e.target.value
-		});
-	  }
-	  handleLastnameChange = (e) => {
-		this.setState({
-		  ...this.state,
-		  lastname: e.target.value
-		});
-		} 
-
-		login = () => {
-			console.log('on login clicked');
-			// authenticateUser(this.state.username, this.state.password, false).then(authResponse => {
-			// 	console.log(authResponse);
-			// 	if (authResponse.auth_token) {
-			// 		//Save the auth token offline to be used by the filestore service
-			// 		saveOffline(authResponse.auth_token)
-			// 		console.log("Login Successful! \n Your auth credentials are: " + JSON.stringify(authResponse, null, 2));
-			// 	} else {
-			// 		console.log(JSON.stringify(authResponse));
-			// 	}
-			// });//works for hasura only.
-		}
-	
-		register = () => {
-			console.log('on register clicked');
-			// authenticateUser(this.state.username, this.state.password, true).then(authResponse => {
-			// 	console.log(authResponse);
-			// 	if (authResponse.auth_token) {
-			// 		saveOffline(authResponse.auth_token)
-			// 		console.log("SignUp Successful! \n Your auth credentials are: " + JSON.stringify(authResponse, null, 2))
-			// 	} else {
-			// 		console.log(JSON.stringify(authResponse));
-			// 	}
-			// });//works for hasura only
-		}
 	
 	render(){
 		
@@ -88,30 +18,26 @@ export default class Login_Signup extends React.Component{
 			<MuiThemeProvider>
 			<GridList cols={2} cellHeight={800}>
 			<GridListTile cols={1}>
-			<img id="logo" src={FinalLogo2}/>
 			<GridList cols={2}>
 			<GridListTile cols={1}>
-			 <TextField 
-			 onChange={this.handleUsernameChange}
-			 id="Username"
+			 <TextField id="Username"
 			 required
+			 className="textField"
        		placeholder="Username"
-       		/><br/>
-			<TextField 
-			onChange={this.handlePasswordChange}
-			id="Password"
+       		/>
+        	<TextField id="Password"
           placeholder="password"
-          type="password"
+		  type="password"
+		  className="textField"
           autoComplete="current-password"
         	required
         	/>
 
 			</GridListTile>
 			<GridListTile cols={1}>
-			 <Button 
-              onClick= {(e) => {
-                this.login()
-              }}raised color="secondary" >
+			<br/>
+			<br/>
+			 <Button raised color="secondary" >
         	Login
       		</Button>
 			</GridListTile>
@@ -122,70 +48,72 @@ export default class Login_Signup extends React.Component{
 
 			<GridListTile cols={1}>
 			<h6 id="righttext">New to Elikart? SignUp below </h6>
-			 <TextField 
-			 onChange={this.handleFirstnameChange}
-			 id="Firstname"
+			<GridList cols={2} cellHeight={700}>
+			<GridListTile cols={1}>
+			
+			 <TextField id="Firstname"
 			 required
+			 className="textField"
+
        		placeholder="Firstname"
        		/><br/>
-			<TextField 
-			onChange={this.handleLastnameChange}
-			id="Lastname"
+				<TextField id="Lastname"
+							 className="textField"
+
 			 required
        		placeholder="Lastname"
        		/><br/>
-			<TextField
-			onChange={this.handleUsernameChange}	
-			id="Uname"	
+				<TextField id="Uname"
+							 className="textField"
+
 			 required
        		placeholder="Username"
        		/><br/>
-			<TextField
-			onChange={this.handleEmailChange}
-			id="email"
+				<TextField id="email"
+							 className="textField"
+
 			 required
        		placeholder="email"
        		/><br/>
-			<TextField id="Pword"
-			onChange={this.handlePasswordChange}
+				<TextField id="Pword"
+							 className="textField"
+
          		placeholder="password"
          	 type="password"
           	
         	required
         	/><br/>
-        	<TextField id="CPword"
+			<TextField id="CPword"
+						 className="textField"
+
          		placeholder=" confirm password"
          	 type="password"
           
         	required
-        	/><br/><br/>
-			 <Button 
-              onClick= {(e) => {
-                this.register()
-              }} raised color="secondary" >
+        	/><br/>
+			<TextField id="mobile_no"
+						 className="textField"
+
+			 required
+       		placeholder="mobile no"
+       		/><br/>
+        	
+			</GridListTile>
+			<GridListTile>
+			<br/>
+			<br/>
+        	 <Button raised color="secondary" >
         	SignUp
       		</Button>
 
 			</GridListTile>
 			</GridList>
+			</GridListTile>
+			</GridList>
+			
 			
 			</MuiThemeProvider>
-			<Dialog
-          actions={[
-            <Button
-              label="Dismiss"
-              secondary={true}
-              onClick={this.closeAlert}
-            />
-          ]}
-          modal={false}
-          open={this.state.showAlert}
-          onRequestClose={this.closeAlert}>
-          {this.state.alertMessage}
-        </Dialog>
 			</div>
-
 			);
 	}
 }
-
