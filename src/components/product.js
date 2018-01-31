@@ -25,7 +25,7 @@ class Product extends React.Component{
 
                      <div className="col s4">
                        <Paper   zDepth={1}  >
-                          <div ><h4 className="sellFormText"></h4>
+                          <div >
                                 <img src={Qh} alt="quickheal" />
                           </div> 
                        </Paper>
