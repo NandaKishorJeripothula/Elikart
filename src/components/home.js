@@ -81,7 +81,7 @@ export default class Home extends Component{
                 <ImageSlider products={this.state.products}/>
               </div>
               <br/>
-              <TitlebarGridList/>
+              <TitlebarGridList  products={this.state.products}/>
             </div>         
  
         )

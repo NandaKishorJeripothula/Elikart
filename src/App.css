@@ -1,6 +1,32 @@
 .App {
   text-align: center;
 }
+.productGridRoot{
+  display: flex;
+  margin: 0;
+  right: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  
+}
+.productViewContainer{
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+}
+.productGridContainer{
+  width: 85%;
+  height: 25%;
+}
+.productGridIcon{
+    color: rgba(255, 255, 255, 0.54);
+}
 .footer {
     position: fixed;
     left: 0;
@@ -13,12 +39,6 @@
 }.App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
-}
-.carousol{
-  height: auto;
-  width: 300px;
-  margin: 0;
-  vertical-align: -webkit-baseline-middle;
 }
 .App-header {
   background-color: #222;

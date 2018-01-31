@@ -1,12 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
 import Subheader from 'material-ui/List/ListSubheader';
 import IconButton from 'material-ui/IconButton';
 import InfoIcon from 'material-ui-icons/Info';
 import imad from './imad.png';
 import Hidden from 'material-ui/Hidden';
+/**
+ * 
 const tileData=[
     {
         img: imad,
@@ -33,8 +33,8 @@ const tileData=[
         featured:true,
     }
 ]
-
-
+ 
+ */
 const styles = theme => ({
   root: {
     display: 'flex',
@@ -69,28 +69,26 @@ const styles = theme => ({
  *   },
  * ];
  */
-function TitlebarGridList(props) {
-  const { classes } = props;
+class TitlebarGridList extends React.Component {
+    constructor(props){
+      super(props);
 
-  return (
-    <div className={classes.root}>
-      <GridList className={classes.gridList}>
-        <Hidden mdUp>  
-          <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-          </GridListTile>
-        </Hidden> 
-        <Hidden largeDown>  
-          <GridListTile key="Subheader" cols={4} style={{ height: 'auto' }}>
-          </GridListTile>
-        </Hidden> 
-        {tileData.map(tile => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
+    }
+    render(){
+      return(
+        <div className="productGridRoot">
+      <GridList cellHeight={180} className="productGridContaner">
+        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+          <Subheader component="div"> Products </Subheader>
+        </GridListTile>
+        {this.props.products.map(product => (
+          <GridListTile key={product.id} className="productViewContainer">
+            <img src={product.first_image_url} alt={product.name} />
             <GridListTileBar
-              title={tile.title}
-              subtitle={<span>by: {tile.author}</span>}
+              title={product.name}
+              subtitle={<span>At: {product.price}</span>}
               actionIcon={
-                <IconButton className={classes.icon}>
+                <IconButton className="productGridIcon">
                   <InfoIcon />
                 </IconButton>
               }
@@ -99,11 +97,7 @@ function TitlebarGridList(props) {
         ))}
       </GridList>
     </div>
-  );
+      );
+    }
 }
-
-TitlebarGridList.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(TitlebarGridList);
+export default TitlebarGridList;
