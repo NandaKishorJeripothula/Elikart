@@ -23,15 +23,18 @@ export default class Login_Signup extends React.Component{
 			 <TextField id="Username"
 			 required
        		placeholder="Username"
-       		/><br/>
+       		/>
         	<TextField id="Password"
           placeholder="password"
           type="password"
           autoComplete="current-password"
         	required
-        	/><br/>
+        	/>
+
 			</GridListTile>
 			<GridListTile cols={1}>
+			<br/>
+			<br/>
 			 <Button raised color="secondary" >
         	Login
       		</Button>
@@ -43,6 +46,9 @@ export default class Login_Signup extends React.Component{
 
 			<GridListTile cols={1}>
 			<h6 id="righttext">New to Elikart? SignUp below </h6>
+			<GridList cols={2} cellHeight={700}>
+			<GridListTile cols={1}>
+			
 			 <TextField id="Firstname"
 			 required
        		placeholder="Firstname"
@@ -62,12 +68,30 @@ export default class Login_Signup extends React.Component{
        		 <TextField id="Pword"
          		placeholder="password"
          	 type="password"
-          	autoComplete="current-password"
+          	
         	required
-        	/><br/><br/>
+        	/><br/>
+        	<TextField id="CPword"
+         		placeholder=" confirm password"
+         	 type="password"
+          
+        	required
+        	/><br/>
+        	<TextField id="mobile_no"
+			 required
+       		placeholder="mobile no"
+       		/><br/>
+        	
+			</GridListTile>
+			<GridListTile>
+			<br/>
+			<br/>
         	 <Button raised color="secondary" >
         	SignUp
       		</Button>
+
+			</GridListTile>
+			</GridList>
 			</GridListTile>
 			</GridList>
 			
