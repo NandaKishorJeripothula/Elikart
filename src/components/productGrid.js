@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
 import Subheader from 'material-ui/List/ListSubheader';
 import IconButton from 'material-ui/IconButton';
@@ -82,7 +83,7 @@ class TitlebarGridList extends React.Component {
           <Subheader component="div"> Products </Subheader>
         </GridListTile>
         {this.props.products.map(product => (
-          <GridListTile key={product.id} className="productViewContainer">
+            <GridListTile key={product.id} className="productViewContainer">
             <img src={product.first_image_url} alt={product.name} />
             <GridListTileBar
               title={product.name}

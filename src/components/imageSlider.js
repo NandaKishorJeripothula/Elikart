@@ -13,20 +13,18 @@ export default class ImageSlider extends Component{
           infinite: true,
           speed: 1000,
           autoplay: true,
-          adaptiveHeight:true,
-          adativeHeight:true,
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
         };
        
         return (
-          <Slider {...settings}>
+          <Slider {...settings} className="imageSlider">
               {
               this.props.products.map((product,i)=>
                 <div>
                   <Link to={'/product'+product.id}>
-                    <GridList cols={2} >
+                    <GridList cols={2}/** cellHeight={400} affects the height**/>
                       <GridListTile cols={1} >
                           <img src={product.first_image_url} alt={product.name}/>
                       </GridListTile>

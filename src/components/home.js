@@ -69,7 +69,7 @@ export default class Home extends Component{
     render(){
         return (
             <div>
-              <div classess='contianer'>
+              <div>
                 {//{
                  // this.state.products.map((productData,i)=>
                  //   <div>
