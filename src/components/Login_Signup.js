@@ -9,7 +9,7 @@ import Button from 'material-ui/Button';
 import Divider from 'material-ui/Divider';
 import FinalLogo2 from './FinalLogo2.png';
 import './Login_Signup.css';
-import {saveOffline } from '../backend/config';
+import {saveOffline } from './config';
 import {authenticateUser} from './api';
 
 export default class Login_Signup extends React.Component{
