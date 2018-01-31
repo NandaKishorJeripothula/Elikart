@@ -22,7 +22,7 @@ export default class Header extends Component{
     <div>
     <nav>
       <div class="nav-wrapper deep-purple accent-2">
-        <Link to="/"><img src={BrandLogoElikart} alt="Brand Logo ELikart" className="left responsive-img brand-logo"/></Link>
+        <Link to="/"><img src={BrandLogoElikart} alt="Brand Logo ELikart" className="center responsive-img brand-logo"/></Link>
         <ul class="right hide-on-med-and-down">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/user">User</Link></li>
