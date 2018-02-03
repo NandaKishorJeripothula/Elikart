@@ -3,6 +3,7 @@ import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
 import Subheader from 'material-ui/List/ListSubheader';
 import IconButton from 'material-ui/IconButton';
 import InfoIcon from 'material-ui-icons/Info';
+import {Link } from 'react-router-dom';
 /**
  * 
 const tileData=[
@@ -76,18 +77,23 @@ class TitlebarGridList extends React.Component {
           <Subheader component="div"> Products </Subheader>
         </GridListTile>
         {this.props.products.map(product => (
-            <GridListTile key={product.id} className="productViewContainer">
-            <img src={product.first_image_url} alt={product.name} />
-            <GridListTileBar
-              title={product.name}
-              subtitle={<span>At: {product.price}</span>}
-              actionIcon={
-                <IconButton className="productGridIcon">
-                  <InfoIcon />
-                </IconButton>
-              }
-            />
-          </GridListTile>
+              <GridListTile key={product.id} className="productViewContainer">
+                <img src={product.first_image_url} alt={product.name} />
+                <Link to={'/product/'+product.id}>
+                <GridListTileBar
+                 
+                  title={product.name}
+                  subtitle={<span>At: {product.price}</span>}
+                  actionIcon={
+                    <IconButton className="productGridIcon">
+                      <InfoIcon />
+                    </IconButton>
+                    
+                  }
+                  />
+                </Link>
+              </GridListTile>
+          
         ))}
       </GridList>
     </div>
