@@ -3,9 +3,6 @@ import GridList, { GridListTile } from 'material-ui/GridList';
 import Slider from 'react-slick';
 import {Link} from 'react-router-dom';
 export default class ImageSlider extends Component{
-    constructor(props){
-      super(props);
-    }
     render() {
         var settings = {
           dots: true,

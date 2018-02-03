@@ -1,9 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
+import GridList, { GridListTile } from 'material-ui/GridList';
 import TextField from 'material-ui/TextField';
 import Button from 'material-ui/Button';
-import Divider from 'material-ui/Divider';
 import Hidden from 'material-ui/Hidden';
 import {saveOffline } from './config';
 import {authenticateUser, Userinfo, MakeUser} from './api';

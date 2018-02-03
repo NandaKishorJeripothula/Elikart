@@ -1,11 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
 import Subheader from 'material-ui/List/ListSubheader';
 import IconButton from 'material-ui/IconButton';
 import InfoIcon from 'material-ui-icons/Info';
-import imad from './imad.png';
-import Hidden from 'material-ui/Hidden';
 /**
  * 
 const tileData=[
@@ -71,10 +68,6 @@ const styles = theme => ({
  * ];
  */
 class TitlebarGridList extends React.Component {
-    constructor(props){
-      super(props);
-
-    }
     render(){
       return(
         <div className="productGridRoot">

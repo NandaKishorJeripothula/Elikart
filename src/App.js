@@ -5,10 +5,9 @@ import 'typeface-roboto';
 import { MuiThemeProvider } from 'material-ui/styles';
 import './App.css';
 import Product from './components/product';
+import Cart from './components/cart';
 import Header from './components/header';
 import Footer from './components/footer';
-import PropsTest from './components/propsTest'
-
 import Home from './components/home';
 import User from './components/user';
 import Auth from './components/auth';
@@ -24,6 +23,7 @@ class App extends Component {
               <Header/>
                  <Switch>
                       <Route exact path="/" component={Home}/>
+                      <Route exact path="/cart" component={Cart}/>
                       <Route path="/user" component={User}/>
                       <Route path="/auth" component={Login_Signup}/>
                       <Route path="/product/:productId" component={Product}/>
