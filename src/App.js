@@ -7,6 +7,7 @@ import './App.css';
 import Product from './components/product';
 import Header from './components/header';
 import Footer from './components/footer';
+import PropsTest from './components/propsTest'
 
 import Home from './components/home';
 import User from './components/user';
@@ -25,7 +26,7 @@ class App extends Component {
                       <Route exact path="/" component={Home}/>
                       <Route path="/user" component={User}/>
                       <Route path="/auth" component={Login_Signup}/>
-                      <Route path="/product" component={Product}/>
+                      <Route path="/product/:productId" component={Product}/>
                       <Route path="/logoutRedirec" component={LogoutRedirec}/>
                 </Switch>
                 <Footer/>

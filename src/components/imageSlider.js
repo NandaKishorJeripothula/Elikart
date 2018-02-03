@@ -23,7 +23,7 @@ export default class ImageSlider extends Component{
               {
               this.props.products.map((product,i)=>
                 <div>
-                  <Link to={'/product'+product.id}>
+                  <Link to={'/product/'+product.id}>
                     <GridList cols={2}/** cellHeight={400} affects the height**/>
                       <GridListTile cols={1} >
                           <img src={product.first_image_url} alt={product.name}/>

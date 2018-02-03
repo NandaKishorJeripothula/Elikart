@@ -73,7 +73,6 @@ export default class Home extends Component{
       fetch("https://app.banner20.hasura-app.io/getproducts")
       .then(response => response.json())
       .then(json => {
-        console.log(json);
         this.setState({
           products: json,
         });

@@ -9,7 +9,29 @@ import Button from 'material-ui/Button';
 
 
 class Product extends React.Component{
+  constructor(props){
+    super(props);
+    console.log();
+    this.state={
+        product:[]
+    }
+  }
+
+
+  loadData(){
+    fetch('https://app.banner20.hasura-app.io/product?product_id='+this.props.match.params.productId)
+    .then(response => response.json())
+    .then(json => {
+      this.setState({
+        product: json,
+      });
+    });
+  }
+  componentDidMount(){
+    this.loadData();
+  }
   render(){
+    {console.log(this.state.product)}
     return (
       <div>
       <div className="row">
