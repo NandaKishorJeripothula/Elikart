@@ -88,7 +88,6 @@ class TitlebarGridList extends React.Component {
                     <IconButton className="productGridIcon">
                       <InfoIcon />
                     </IconButton>
-                    
                   }
                   />
                 </Link>
