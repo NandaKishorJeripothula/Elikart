@@ -45,6 +45,7 @@ _Responsive Content_
  *   Entire APIs Developed 
 
  ## Sample Screenshots
+ 
 [fullHome]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/FullModeHome.png
 [mobileHome]:[fullhome]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/FullModeHome.png
 [tabHome]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/TabModeHome.png
