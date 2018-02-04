@@ -9,8 +9,6 @@ Here the aim of the app is ~~fully featured~~ to have minimum and mandatory feat
 ### Contents 
 * [Developers](#developers)
 * [Work Shared](#work-shared)
-* [Implementation Detials](#implementation-details)
-* [Tasks Achieved and Note ](#task-achieved-and-note)
 * [Sample Screenshots](#samples)
 
 ## Developers
@@ -30,6 +28,7 @@ Here the aim of the app is ~~fully featured~~ to have minimum and mandatory feat
 
 * Login and Sign up handling for user
 * Landing Page ( Slider + Products loading )
+* Product Page **[Fully working]**
 _Responsive Content_
 > Anusha Kalbande 
 
@@ -44,3 +43,22 @@ _Responsive Content_
 > Karthik Kumar Gajula 
 
  *   Entire APIs Developed 
+
+ ## Sample Screenshots
+[fullHome]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/FullModeHome.png
+[mobileHome]:[fullhome]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/FullModeHome.png
+[tabHome]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/TabModeHome.png
+[fullLogin]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/Login.png
+[mobileLogin]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/LoginMobile.png
+[productsHome]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/ProductsHome.png
+[productMobile]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/ProductMobile.png
+[productFull]:https://github.com/NandaKishorJeripothula/Elikart/blob/master/ProductFull.png
+![Desktop Home][fullHome]
+![MobileMode Home][mobileHome]
+![Tab Home][tabHome]
+![Desktop Login][fullLogin]
+![Mobile Home][mobileLogin]
+![Product Home][productsHome]
+![Desktop view Products][productFull]
+![Mobile view Products][productMobile]
+
