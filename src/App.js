@@ -23,7 +23,7 @@ class App extends Component {
               <Header/>
                  <Switch>
                       <Route exact path="/" component={Home}/>
-                      <Route exact path="/cart" component={Cart}/>
+                      <Route path="/cart" component={Cart}/>
                       <Route path="/user" component={User}/>
                       <Route path="/auth" component={Login_Signup}/>
                       <Route path="/product/:productId" component={Product}/>
