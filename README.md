@@ -15,8 +15,7 @@ Here the aim of the app is ~~fully featured~~ to have minimum and mandatory feat
 > Frontend
 
     * Nanda Kishor Jeripothula  (j.kishor.bd@gmail.com)
-    * Anusha Kalbande           (anushakalbande17@gmail.com)
-    * Willson V                 (vermawillson@gmail.com)
+    
 > Backend (Python-Flask)
     
     * Gajula Karthik Kumar       (karthikg.myb@gmail.com)
@@ -30,15 +29,6 @@ Here the aim of the app is ~~fully featured~~ to have minimum and mandatory feat
 * Landing Page ( Slider + Products loading )
 * Product Page **[Fully working]**
 _Responsive Content_
-> Anusha Kalbande 
-
-* _[Assigned Part]_ **[Not yet finished]** Sellers Page
-
-> Willson V
-
-* _[Assingned Part]_ **[Not yet finished]** Cart Handling
-*  **[Partially finished]** Product Page
-
 ### Backend
 > Gajula Karthik Kumar 
 
